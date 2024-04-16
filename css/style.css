@@ -1,6 +1,8 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin:0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -24,7 +26,69 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
+/***********header*********/
 
+.nav-container{
+    height:79px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 79px;
+    width: 161.09px;
+    padding:30px 50px;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 344px;
+    height:35px;
+    align-items: center;
+    position:relative;
+
+}
+
+
+.nav-text{
+    display: flex;
+    justify-content:space-around;
+    width:244px;
+    height: 35px;
+    padding: 0 50px;
+}
+
+.hebergements-link, .activites-link{
+    text-align:center;
+    padding-top: 16px;
+    height: 35px;
+    border-top: 2px solid#f2f2f200;
+    position:relative;
+}
+
+.hebergements-link{
+width: 113px;
+margin-right:34px;
+color:var(--main-color);;
+}
+.activites-link{
+width: 63px;
+margin-left: 34px;
+}
+.hebergements-link:hover, .activites-link:hover{
+border-top: 2px solid var(--main-color);
+padding-top: 16px; 
+}
+
+.hebergements-link:focus{
+    color: var(--main-color);
+}
+
+.activites-link:focus{
+    color: var(--main-color);
+}
+/***************************/
 a {
     color: inherit;
     text-decoration: none;
@@ -72,7 +136,7 @@ a {
 }
 
 /****** Hebergements ***********/
-.hebergements {
+#hebergements {
     width: 65%;
 }
 
@@ -81,7 +145,7 @@ a {
     width: 32%;
 }
 
-.populaires-title {
+.section-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -163,5 +227,6 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
     /* ... */
 }
