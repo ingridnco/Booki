@@ -381,6 +381,7 @@ footer{
     display: flex;
     justify-content: space-between;
     width:1340px;
+    height:163px;
     background-color: #F2F2F2;
 }
 .footer-column{
