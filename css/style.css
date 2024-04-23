@@ -103,12 +103,12 @@ nav {
 /****************Search*******************/
 .search {
     height: 281px;
-    margin-bottom: 28px;
+    margin-bottom: 37px;
 }
 
 .main-title h1 {
     font-size: 22px;
-    margin: 35px 0 8px 0;
+    margin: 30px 0 8px 0;
 }
 
 /****************Form********************/
@@ -145,7 +145,7 @@ form {
     border-right: none;
     width: 195px;
     height: 49px;
-    padding: 15px 20px;
+    padding: 15px 24px;
 }
 ::placeholder {
     color: black;
@@ -188,11 +188,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 35px 0;
 }
-.filter-title {
-    padding: 15px 0;
-}
+
 .filter-wrapper {
     display: flex;
 }
@@ -453,6 +451,12 @@ li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    .filter-title {
+        padding-bottom: 21px;
+        padding-top: 3px;
+    }
+    
     .filter-container {
         align-items: flex-start;
         flex-direction: column;
