@@ -526,9 +526,10 @@ li {
 /********footer********/
 footer{
     width:100%;
+    margin-top: 66px;
 }    
 .footer-column{
-    margin-right: 40px;
+    margin-right: 45px;
 }
 
 
