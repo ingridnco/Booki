@@ -368,11 +368,12 @@ button {
 
 /************activités********/
 .activites {
-    margin: 65px auto;
+    margin: 35px auto;
     width:95.5%;
 }
 .activites-title {
     margin-bottom: 33px;
+    padding-top: 30px;
 }
 
 .activites-cards-wrapper {
@@ -502,7 +503,6 @@ li {
   }
 
   .activites{
-  margin: 65px auto;
   width: 93.5%;
   }
   
@@ -751,7 +751,7 @@ footer{
     .activites {
         margin-top: 0;
         margin-bottom: 35px;
-        padding: 30px;
+        padding: 0 30px 30px 30px;
         width: 100%;
     }
 
