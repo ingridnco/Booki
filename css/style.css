@@ -493,7 +493,7 @@ li {
     }
 
     .populaires-cards-wrapper a {
-        width: 30%;
+        width: 31.8%;;
     }
     /*************activites********************/
 
@@ -662,6 +662,7 @@ li {
         margin: 10px 0;
         padding: 16px 19px 16px 0;
         font-size: 14px;
+        white-space: nowrap;
     }
 
     .info {
