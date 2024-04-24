@@ -372,8 +372,8 @@ button {
 
 /************activités********/
 .activites {
-    margin: 35px auto;
-    width: 95.5%;
+    padding: 30px;
+    width: 100%;
 }
 .activites-title {
     margin-bottom: 33px;
@@ -499,15 +499,17 @@ li {
 
     .activites-cards-wrapper {
         margin: 0 auto;
+        justify-content: space-between;
     }
 
     .activites {
-        width: 93.5%;
+        width: 100%;
     }
 
     .activites-cards-wrapper .card {
         height: 270px;
-        width: 193.5px;
+        width: 19vw;
+        margin: 0;
     }
 
     .activites-cards-wrapper .card img {
@@ -522,7 +524,7 @@ li {
     /********footer********/
     footer {
         width: 100%;
-        margin-top: 66px;
+        margin-top: 36px;
     }
     .footer-column {
         width: 31%;
