@@ -84,9 +84,8 @@ nav {
 .activites-link {
     text-align: center;
     padding-top: 16px;
-    height: 35px;
     border-top: 2px solid#f2f2f200; /* ajout d'un border transparent pour éviter un décalage vers le haut lors du :hover */
-    position: relative;
+    
 }
 
 .hebergements-link {
@@ -569,7 +568,7 @@ li {
         height: 36px;
     }
 
-    .nav-text {
+    .nav-wrapper {
         width: 100%;
         height: 19px;
         padding: 0;
