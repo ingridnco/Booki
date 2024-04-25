@@ -100,7 +100,7 @@ nav {
 .hebergements-link:hover,
 .activites-link:hover {
     border-top: 2px solid var(--main-color);
-    padding-top: 16px;
+    padding-top: 14px;
     color: var(--main-color);
 }
 
