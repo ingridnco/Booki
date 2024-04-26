@@ -28,7 +28,7 @@ a {
     box-sizing: border-box;
 }
 
-.euro, .gras {
+.euro, .gras {  /*ajout .gras pour utilisation dans toute la page*/
     font-weight: 700;
 }
 
@@ -36,6 +36,7 @@ a {
     font-size: 18px;
 }
 
+/*****modifications des icônes*****/
 .fa-solid {
     color: var(--main-color);
 }
@@ -55,7 +56,7 @@ a {
  
 /***********header***********/
 
-.nav-container {
+.header-container {
     height: 79px;
     display: flex;
     justify-content: space-between;
@@ -72,7 +73,7 @@ nav {
     width: 244px;
     height: 36px;
     align-items: center;
-    position: relative;
+    position: relative; /*sert pout la grey-line en responsive mobile*/
 }
 
 .nav-wrapper {
@@ -84,8 +85,7 @@ nav {
 .activites-link {
     text-align: center;
     padding-top: 14px;
-    border-top: 2px solid#f2f2f200; /* ajout d'un border transparent pour éviter un décalage vers le haut lors du :hover */
-    
+    border-top: 2px solid #f2f2f200; /* ajout d'un border transparent pour éviter un décalage vers le haut lors du :hover */
 }
 
 .hebergements-link {
@@ -97,13 +97,13 @@ nav {
     margin-left: 34px;
 }
 
-.hebergements-link:hover,
+.hebergements-link:hover, .hebergements-link:active ,
 .activites-link:hover {
     border-top: 2px solid var(--main-color);
     padding-top: 14px;
     color: var(--main-color);
 }
-
+/*essai active pour mobile touch*/
 .hebergements-link:active {
     color: var(--main-color);
 }
@@ -147,8 +147,8 @@ form {
 }
 
 .search-form {
-    border-top: 1px solid#F2F2F2;
-    border-bottom: 1px solid#F2F2F2;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
     border-left: none;
     border-right: none;
     width: 195px;
@@ -556,7 +556,7 @@ li {
         min-width: 320px;
     }
 
-    .nav-container {
+    .header-container {
         flex-direction: column;
         align-items: center;
         height: 115px;
@@ -601,11 +601,6 @@ li {
         border-top: none;
         padding: 0 0 15px 0;
         border-bottom: 2px solid var(--main-color);
-        z-index: 2;
-    }
-
-    .hebergements-link:hover ~ .blue-line-left {
-        border: 1px solid var(--main-color);
         z-index: 2;
     }
 
