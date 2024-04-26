@@ -54,7 +54,6 @@ a {
 }
  
 /***********header***********/
-
 .header-container {
     height: 79px;
     display: flex;
@@ -91,22 +90,21 @@ nav {
     width: 113px;
     margin-right: 34px;
 }
+
 .activites-link {
     width: 63px;
     margin-left: 34px;
 }
 
-.hebergements-link:hover, .hebergements-link:active ,
+.hebergements-link:hover, 
 .activites-link:hover {
     border-top: 2px solid var(--main-color);
     padding-top: 14px;
     color: var(--main-color);
 }
-/*essai active pour mobile touch*/
-.hebergements-link:active {
-    color: var(--main-color);
-}
 
+/*essai active pour mobile touch*/
+.hebergements-link:active, 
 .activites-link:active {
     color: var(--main-color);
 }
@@ -153,10 +151,12 @@ form {
     height: 49px;
     padding: 15px 24px;
 }
+
 ::placeholder {
     color: black;
     opacity: 1; /*pour que ce soit noir sur avec firefox*/
 }
+
 .search-button {
     background-color: var(--main-color);
     color: white;
@@ -192,6 +192,7 @@ button {
 .filter-container { /*pour mettre en column en responsive*/
     display: flex;
 }
+
 .filter {
     display: flex;
     align-items: center;
@@ -235,7 +236,6 @@ button {
 }
 
 /********* Hebergements And Populaires ***********/
-
 .h2-title {
     margin: 0;
     font-size: 22px;
@@ -264,6 +264,7 @@ button {
     display: flex;
     justify-content: space-between;
 }
+
 .plus {
     margin-top: 30px;
 }
@@ -283,6 +284,7 @@ button {
 .hebergements {
     width: 65%;
 }
+
 .hebergements-cards-wrapper {
     width: 100%;
     height: fit-content;
@@ -327,6 +329,7 @@ button {
     font-size: 18px;
     letter-spacing: 1.67px;
 }
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -374,6 +377,7 @@ button {
     padding: 30px;
     width: 100%;
 }
+
 .activites-title {
     margin-bottom: 33px;
     padding-top: 30px;
@@ -419,6 +423,7 @@ footer {
     background-color: var(--main-bg-color);
     margin-top: 36px;
 }
+
 .footer-column {
     display: flex;
     flex-direction: column;
@@ -476,6 +481,7 @@ li {
     .search-and-filter {
         height: 325px;
     }
+
     /*********hebergement et populaires************/
     .hebergements-and-populaires {
         flex-direction: column;
@@ -494,14 +500,16 @@ li {
         display: flex;
         justify-content: space-between;
     }
-.populaires-cards-wrapper .card{
-    margin-top:20px;
-}
+
+    .populaires-cards-wrapper .card{
+        margin-top:20px;
+    }
 
 
     .populaires-cards-wrapper a {
         width: 31.8%;;
     }
+
     /*************activites********************/
 
     .activites-cards-wrapper {
@@ -527,16 +535,16 @@ li {
         align-items: center;
         height: 70px;
     }
+
     /********footer********/
     footer {
         width: 100%;
     }
+
     .footer-column {
         width: 31%;
         margin-right: 0;
     }
-
-    /*******************************/
 }
 
 
@@ -557,6 +565,7 @@ li {
     body {
         width: 100%;
     }
+
     .main-container {
         padding: 0;
         min-width: 320px;
@@ -622,11 +631,13 @@ li {
         height: fit-content;
         margin: auto;
     }
+
     .search {
         margin-left: auto;
         margin-right: auto;
         justify-content: center;
     }
+    
     .search-form {
         width: 64vw;
     }
@@ -634,6 +645,7 @@ li {
     .magnif-glass-wrapper {
         display: flex;
     }
+
     .magnif-glass {
         width: 49px;
         box-shadow: 0 5px 3px #00000047;
@@ -671,8 +683,8 @@ li {
     .info {
         padding-bottom: 6px;
     }
-    /************cards**************/
 
+    /************cards**************/
     .hebergements-and-populaires {
         margin-top: 30px;
     }
@@ -685,6 +697,7 @@ li {
     .populaires-cards-wrapper {
         flex-direction: column;
     }
+
     .populaires-cards-wrapper a {
         width: 100%;
     }
@@ -708,6 +721,7 @@ li {
         background-color: white;
         height: 1484px;
     }
+
     .hebergements-cards-wrapper {
         flex-direction: column;
         width: 100%;
@@ -734,6 +748,7 @@ li {
     .plus {
         margin-top: 15px;
     }
+
     /********activités**************/
 
     .activites {
@@ -761,6 +776,7 @@ li {
     .activites-cards-wrapper .card img {
         height: 141px;
     }
+
     /*************footer**********/
 
     footer {
