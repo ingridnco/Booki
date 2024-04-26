@@ -295,14 +295,14 @@ button {
 
 .hebergements-cards-wrapper a{
     width:31%;
-    min-width: 200px;
+    min-width: 200px; /*pour éviter titre sur 2 lignes qui dépasse de la card quand on réduit la taille de l'écran */
 }
 
 .hebergements-cards-wrapper .card {
     display: flex;
     flex-direction: column;
     width: 100%; 
-    height: 207.25px;
+    height: 207px;
 }
 
 .hebergements-cards-wrapper img {
@@ -327,7 +327,7 @@ button {
 .hebergements-cards-wrapper .card-rating {
     margin-top: 4px;
     font-size: 18px;
-    letter-spacing: 1.67px;
+    letter-spacing: 1.5px;
 }
 
 /****** Populaires ***********/
