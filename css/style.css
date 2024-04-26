@@ -25,7 +25,6 @@ a {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
-    box-sizing: border-box;
 }
 
 .euro, .gras {  /*ajout .gras pour utilisation dans toute la page*/
@@ -266,7 +265,7 @@ button {
     justify-content: space-between;
 }
 .plus {
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .plus:hover { /*pour signaler lien cliquable*/
@@ -292,10 +291,15 @@ button {
     flex-wrap: wrap;
 }
 
+.hebergements-cards-wrapper a{
+    width:31%;
+    min-width: 200px;
+}
+
 .hebergements-cards-wrapper .card {
     display: flex;
     flex-direction: column;
-    width: 250.33px; 
+    width: 100%; 
     height: 207.25px;
 }
 
@@ -311,7 +315,6 @@ button {
     padding-top: 7px;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
 }
 
 .hebergements-cards-wrapper .card-title {
@@ -338,7 +341,7 @@ button {
 .populaires-cards-wrapper .card,
 .hebergements-cards-wrapper .card {
     display: flex;
-    margin-top: 33px;
+    margin-top: 30px;
 }
 
 .populaires-cards-wrapper img {
@@ -353,7 +356,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 .populaires-cards-wrapper .card-title {
@@ -381,12 +383,17 @@ button {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
+}
+
+.activites-cards-wrapper a{
+    width: 23%;
 }
 
 .activites-cards-wrapper .card {
     display: flex;
     flex-direction: column;
-    width: 297.5px;
+    width: 100%;
     height: 439px;
     border-radius: 20px;
     padding: 0;
@@ -410,6 +417,7 @@ footer {
     width: 100%;
     height: 163px;
     background-color: var(--main-bg-color);
+    margin-top: 36px;
 }
 .footer-column {
     display: flex;
@@ -484,9 +492,12 @@ li {
 
     .populaires-cards-wrapper {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
+.populaires-cards-wrapper .card{
+    margin-top:20px;
+}
+
 
     .populaires-cards-wrapper a {
         width: 31.8%;;
@@ -519,7 +530,6 @@ li {
     /********footer********/
     footer {
         width: 100%;
-        margin-top: 36px;
     }
     .footer-column {
         width: 31%;
@@ -702,6 +712,11 @@ li {
         flex-direction: column;
         width: 100%;
     }
+
+    .hebergements-cards-wrapper a {
+        width: 100%;
+    }
+
     .hebergements-cards-wrapper img {
         height: 115px;
     }
