@@ -453,6 +453,10 @@ li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    .search-form{
+        border-radius: 0; /*suppression de l'arrondi visible sur iOS*/
+    }
+
     .filter-title {
         padding-bottom: 21px;
         padding-top: 3px;
@@ -607,6 +611,9 @@ li {
         margin-right: auto;
         justify-content: center;
     }
+    .localize{
+        margin-left: 11px; /*pour rattraper les -11px du magnif-glass-wrapper, sinon ce n'est plus centré*/ 
+    }
     
     .search-form {
         width: 64vw; /*s'adapte mieux au responsive*/
@@ -614,6 +621,8 @@ li {
 
     .magnif-glass-wrapper {
         display: flex;
+        position: relative;
+        left: -11px;
         
     }
 
