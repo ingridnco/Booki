@@ -9,6 +9,7 @@
     --main-color: #0065fc;
     --main-bg-color: #f2f2f2;
     --filter-bg-color: #deebff;
+    --borders-color: #d9d9d9;
 }
 
 body {
@@ -193,7 +194,7 @@ button {
 .filter-button {
     display: flex;
     padding: 13px 19px 13px 0;
-    border: 2px solid #d9d9d9;
+    border: 2px solid var(--borders-color);
     border-radius: 25px;
     font-size: 17px;
 }
@@ -210,13 +211,12 @@ button {
 .info {
     display: flex;
     align-items: center;
-    font-size: 16px;
 }
 
 .info-icon {
-    border: 1px solid #d9d9d9;
+    border: 1px solid var(--borders-color);
     padding: 3px 10px;
-    border-radius: 30px;
+    border-radius: 20px;
     margin-right: 10px;
 }
 
@@ -268,7 +268,6 @@ button {
 }
 
 .hebergements-cards-wrapper {
-    height: fit-content;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -381,7 +380,6 @@ button {
 
 .activites-cards-wrapper .card img {
     height: 380px;
-    object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
