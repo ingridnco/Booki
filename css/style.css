@@ -114,7 +114,6 @@ a {
 }
 
 .search {
-    border-radius: 15px;
     height: 49px;
     display: flex;
     margin-top: 35px;
@@ -150,8 +149,7 @@ form {
 .search-button {
     background-color: var(--main-color);
     color: white;
-    padding: 15px 16px;
-    width: 132px;
+    padding: 14px 16px;
     border-radius: 0 15px 15px 0;
 }
 
@@ -594,8 +592,6 @@ li {
     }
 
     .search {
-        margin-left: auto;
-        margin-right: auto;
         justify-content: center;
     }
     .localize{
