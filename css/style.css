@@ -176,19 +176,18 @@ button {
 }
 
 /*************filters********************/
-.filter-container { /*pour mettre en column en responsive*/
-    display: flex;
-}
+
 
 .filter {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     margin: 35px 0;
+    gap: 0 15px;
 }
 
 .filter-buttons-wrapper {
     display: flex;
+    gap: 0 15px;
 }
 
 .filter-button {
@@ -196,7 +195,6 @@ button {
     padding: 13px 19px 13px 0;
     border: 2px solid #d9d9d9;
     border-radius: 25px;
-    margin-left: 15px;
     font-size: 17px;
 }
 
@@ -456,11 +454,10 @@ li {
     .filter {
         align-items: flex-start;
         flex-direction: column;
+        gap: 0 15px;
     }
 
     .filter-button {
-        margin-left: 0;
-        margin-right: 15px;
         white-space: nowrap;
     }
 
@@ -625,6 +622,7 @@ li {
     .filter-buttons-wrapper {
         flex-wrap: wrap;
         justify-content: space-around;
+        gap: 0 5px;
     }
 
     .filter-button {
