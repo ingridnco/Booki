@@ -10,6 +10,7 @@
     --main-bg-color: #f2f2f2;
     --filter-bg-color: #deebff;
     --borders-color: #d9d9d9;
+    --hover-btn-color:#0065fc82;
 }
 
 body {
@@ -28,15 +29,20 @@ a {
     padding: 0 50px;
 }
 
-.euro, .gras {  /*ajout .gras pour utilisation dans toute la page*/
+/*fonts*/
+.euro, .bold {  /*ajout .bold pour utilisation dans toute la page*/
     font-weight: 700;
+}
+
+.h2-title {
+    font-size: 22px;
 }
 
 .font18 {
     font-size: 18px;
 }
 
-/*****modifications des icônes*****/
+/*icônes*/
 .fa-solid {
     color: var(--main-color);
 }
@@ -52,6 +58,19 @@ a {
 
 .fa-magnifying-glass {
     color: #ffffff;
+}
+
+/*cards*/
+.card {
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
+}
+
+.card img {
+    object-fit: cover;
 }
  
 /***********header***********/
@@ -87,7 +106,7 @@ a {
 }
 
 .grey-line {
-    display:none
+    display:none /*ne doit apparaître qu'en version mobile*/
 }
 
 .hebergements-link:hover, 
@@ -134,8 +153,8 @@ form {
 }
 
 .search-form {
-    border-top: 1px solid #F2F2F2;
-    border-bottom: 1px solid #F2F2F2;
+    border-top: 1px solid var(--main-bg-color);
+    border-bottom: 1px solid var(--main-bg-color);
     border-left: none;
     border-right: none;
     width: 195px;
@@ -144,7 +163,7 @@ form {
 
 ::placeholder {
     color: black;
-    opacity: 1; /*pour que ce soit noir sur avec firefox*/
+    opacity: 1; /*pour que ce soit noir avec firefox*/
 }
 
 .search-button {
@@ -155,7 +174,7 @@ form {
 }
 
 .search-button:hover { /*pour signaler bouton cliquable*/
-    background-color: #0065fc82;
+    background-color: var(--hover-btn-color);
 }
 
 button {
@@ -163,22 +182,10 @@ button {
 }
 
 .magnif-glass-wrapper {
-    justify-content: center;
-    align-items: center;
-    width: 49px;
-    background-color: var(--main-color);
-    border-radius: 15px;
-    box-shadow: 0 5px 3px #00000047;
-    display: none;
-}
-
-.magnif-glass-wrapper:hover{ /*pour signaler bouton cliquable*/
-    background-color: #0065fc82;
+    display: none;  /*doit apparaître dans la version mobile seulement*/
 }
 
 /*************filters********************/
-
-
 .filter {
     display: flex;
     align-items: center;
@@ -213,7 +220,7 @@ button {
     align-items: center;
 }
 
-.info-icon {
+.info-icon { /*cercle autour du "i"*/
     border: 1px solid var(--borders-color);
     padding: 3px 10px;
     border-radius: 20px;
@@ -233,19 +240,9 @@ button {
     padding: 30px;
 }
 
-.h2-title {
-    font-size: 22px;
-}
-
-.card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.1));
-}
-
-.card img {
-    object-fit: cover;
+.populaires-cards-wrapper .card,
+.hebergements-cards-wrapper .card { /*car margin-top de activites-card différent*/
+    margin-top: 30px;
 }
 
 .card-title {
@@ -254,12 +251,6 @@ button {
 
 .card-subtitle {
     font-size: 14px;
-}
-
-.populaires-cards-wrapper .card,
-.hebergements-cards-wrapper .card {
-    display: flex;
-    margin-top: 30px;
 }
 
 /****** Hebergements ***********/
@@ -275,7 +266,7 @@ button {
 
 .hebergements-cards-wrapper a{
     width:31%;
-    min-width: 200px; /*pour éviter titre sur 2 lignes qui dépasse de la card quand on réduit la taille de l'écran */
+    min-width: 200px; /*pour éviter titre sur 2 lignes (=> le contenu dépasse de la card) quand taille de l'écran < 1137px */
 }
 
 .hebergements-cards-wrapper .card {
@@ -305,7 +296,7 @@ button {
 .hebergements-cards-wrapper .card-rating {
     margin-top: 4px;
     font-size: 18px;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px; /*espacement des étoiles*/
 }
 
 .plus {
@@ -349,17 +340,17 @@ button {
 .populaires-cards-wrapper .card-rating {
     margin-bottom: 2px;
     font-size: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; /*espacement des étoiles*/
 }
 
-/************activités********/
+/************activités**********/
 .activites {
     padding: 30px;
 }
 
 .activites-title {
     margin-bottom: 33px;
-    padding-top: 30px;
+    padding-top: 30px; /*"padding" pour apparaître avec la même marge qu'en desktop au clic du lien "activités" */
 }
 
 .activites-cards-wrapper {
@@ -372,7 +363,6 @@ button {
 }
 
 .activites-cards-wrapper .card {
-    display: flex;
     flex-direction: column;
     height: 439px;
     padding: 0;
@@ -387,16 +377,12 @@ button {
     display: flex;
     align-items: center;
     height: 60px;
-}
-
-.act-text {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 /**************footer******************/
 footer {
     display: flex;
-    justify-content: space-between;
     background-color: var(--main-bg-color);
     margin-top: 36px;
 }
@@ -440,6 +426,7 @@ li {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    /***********search and filter**********/
     .search-form{
         border-radius: 0; /*suppression de l'arrondi visible sur iOS*/
     }
@@ -456,7 +443,7 @@ li {
     }
 
     .filter-button {
-        white-space: nowrap;
+        white-space: nowrap; /*pour éviter une 2ème ligne en-dessous de 789px*/
     }
 
     .search-and-filter {
@@ -490,7 +477,7 @@ li {
         width: 31.8%;;
     }
 
-    /*************activites********************/
+    /*************activités********************/
     .activites-cards-wrapper .card {
         height: 270px;
         margin: 0;
@@ -505,6 +492,10 @@ li {
     }
 
     /********footer********/
+    footer{
+        justify-content: space-between;
+    }
+
     .footer-column {
         width: 31%;
         margin-right: 0;
@@ -531,6 +522,7 @@ li {
         min-width: 320px;
     }
 
+/*************header***************/
     .header-container {
         flex-direction: column;
         align-items: center;
@@ -539,7 +531,7 @@ li {
 
     .logo {
         padding: 30px 0 25px 0;
-      }
+    }
 
     .nav-bar {
         width: 100%;
@@ -559,7 +551,7 @@ li {
     .grey-line {
         display:flex;
         border: 1px solid var(--filter-bg-color);
-        position: absolute;
+        position: absolute; /* pour afficher indépendamment du parent nav-bar */
         top: 33.4px;
         z-index: 1;
         width: 100%;
@@ -573,13 +565,7 @@ li {
         z-index: 2;
     }
 
-    .activites-link:hover {
-        border-top: none;
-        padding: 0 0 15px 0;
-    }
-
     /********search**********/
-
     .search-and-filter {
         width: 90%;
         height: fit-content;
@@ -589,23 +575,33 @@ li {
     .search {
         justify-content: center;
     }
+
     .localize{
         margin-left: 11px; /*pour rattraper les -11px du magnif-glass-wrapper, sinon ce n'est plus centré*/ 
     }
     
     .search-form {
-        width: 64vw; /*s'adapte mieux au responsive*/
+        width: 64vw; /* vw s'adapte mieux au responsive ici*/
     }
 
     .magnif-glass-wrapper {
         display: flex;
-        position: relative;
-        left: -11px;
+        justify-content: center;
+        align-items: center;
+        width: 49px;
+        background-color: var(--main-color);
+        border-radius: 15px;
+        box-shadow: 0 5px 3px #00000047; 
+        position: relative; 
+        left: -11px;  /*pour empêcher un vide entre le form et le bouton*/
+    }
         
+    .magnif-glass-wrapper:hover{ /*pour signaler bouton cliquable*/
+        background-color: var(--hover-btn-color);
     }
 
     .search-button {
-        display: none;
+        display: none; /*remplacé par la loupe*/
     }
 
     /************filter*************/
@@ -620,11 +616,11 @@ li {
     .filter-buttons-wrapper {
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 0 5px;
+        gap: 0 5px; /*augmentation du petit espace entre les boutons-filtres seulement*/
     }
 
     .filter-button {
-        width: 48%;
+        width: 48%; /*pour des boutons de même largeur*/
         margin: 10px 0;
         padding: 16px 19px 16px 0;
         font-size: 14px;
@@ -634,7 +630,7 @@ li {
         padding-bottom: 6px;
     }
 
-    /************cards**************/
+    /************hébergements et populaires**************/
     .hebergements-and-populaires {
         margin-top: 30px;
     }
@@ -653,7 +649,7 @@ li {
     }
 
     .populaires {
-        order: 1;
+        order: 1; /*visible avant hébergements*/
         border-radius: 0;
         margin-top: 0;
         padding: 20px;
@@ -665,7 +661,7 @@ li {
     }
 
     .hebergements {
-        order: 2;
+        order: 2; /*visible après populaires*/
         padding: 35px 20px;
         border-radius: 0;
         background-color: white;
@@ -690,7 +686,6 @@ li {
     }
 
     /********activités**************/
-
     .activites {
         margin-top: 0;
         margin-bottom: 35px;
@@ -720,10 +715,8 @@ li {
     }
 
     /*************footer**********/
-
     footer {
         flex-direction: column;
-        height: fit-content;
         margin-top: 0;
     }
 
