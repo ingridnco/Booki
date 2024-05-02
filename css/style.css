@@ -10,7 +10,7 @@
     --main-bg-color: #f2f2f2;
     --filter-bg-color: #deebff;
     --borders-color: #d9d9d9;
-    --hover-btn-color:#0065fc82;
+    --hover-btn-color: #0065fc82;
 }
 
 body {
@@ -30,7 +30,9 @@ a {
 }
 
 /*fonts*/
-.euro, .bold {  /*ajout .bold pour utilisation dans toute la page*/
+.euro,
+.bold {
+    /*ajout .bold pour utilisation dans toute la page*/
     font-weight: 700;
 }
 
@@ -72,7 +74,7 @@ a {
 .card img {
     object-fit: cover;
 }
- 
+
 /***********header***********/
 .header-container {
     height: 79px;
@@ -106,10 +108,10 @@ a {
 }
 
 .grey-line {
-    display:none /*ne doit apparaître qu'en version mobile*/
+    display: none; /*ne doit apparaître qu'en version mobile*/
 }
 
-.hebergements-link:hover, 
+.hebergements-link:hover,
 .activites-link:hover {
     border-top: 2px solid var(--main-color);
     padding-top: 14px;
@@ -117,7 +119,7 @@ a {
 }
 
 /*essai active pour mobile touch*/
-.hebergements-link:active, 
+.hebergements-link:active,
 .activites-link:active {
     color: var(--main-color);
 }
@@ -139,12 +141,12 @@ a {
     margin-top: 35px;
 }
 
-.localize { 
+.localize {
     min-width: 50px; /*min pour que le bouton ne rétrécisse pas en responsive*/
     background-color: var(--main-bg-color);
     border-radius: 15px 0 0 15px;
     display: flex;
-    justify-content: center;/*pour centrer icon*/
+    justify-content: center; /*pour centrer icon*/
     align-items: center;
 }
 
@@ -173,7 +175,8 @@ form {
     border-radius: 0 15px 15px 0;
 }
 
-.search-button:hover { /*pour signaler bouton cliquable*/
+.search-button:hover {
+    /*pour signaler bouton cliquable*/
     background-color: var(--hover-btn-color);
 }
 
@@ -182,7 +185,7 @@ button {
 }
 
 .magnif-glass-wrapper {
-    display: none;  /*doit apparaître dans la version mobile seulement*/
+    display: none; /*doit apparaître dans la version mobile seulement*/
 }
 
 /*************filters********************/
@@ -220,7 +223,8 @@ button {
     align-items: center;
 }
 
-.info-icon { /*cercle autour du "i"*/
+.info-icon {
+    /*cercle autour du "i"*/
     border: 1px solid var(--borders-color);
     padding: 3px 10px;
     border-radius: 20px;
@@ -241,7 +245,8 @@ button {
 }
 
 .populaires-cards-wrapper .card,
-.hebergements-cards-wrapper .card { /*car margin-top de activites-card différent*/
+.hebergements-cards-wrapper .card {
+    /*car margin-top de activites-card différent*/
     margin-top: 30px;
 }
 
@@ -264,13 +269,13 @@ button {
     flex-wrap: wrap;
 }
 
-.hebergements-cards-wrapper a{
-    width:31%;
+.hebergements-cards-wrapper a {
+    width: 31%;
     min-width: 200px; /*pour éviter titre sur 2 lignes (=> le contenu dépasse de la card) quand taille de l'écran < 1137px */
 }
 
 .hebergements-cards-wrapper .card {
-    flex-direction: column; 
+    flex-direction: column;
     height: 207px;
 }
 
@@ -303,7 +308,8 @@ button {
     margin-top: 30px;
 }
 
-.plus:hover { /*pour signaler lien cliquable*/
+.plus:hover {
+    /*pour signaler lien cliquable*/
     color: rgba(0, 0, 0, 0.616);
 }
 
@@ -358,7 +364,7 @@ button {
     justify-content: space-between;
 }
 
-.activites-cards-wrapper a{
+.activites-cards-wrapper a {
     width: 23%;
 }
 
@@ -392,7 +398,7 @@ footer {
     flex-direction: column;
     margin-right: 206px;
     padding: 20px;
-    width: 19%; 
+    width: 19%;
 }
 
 ul {
@@ -415,19 +421,13 @@ li {
 
 
 
-
-
-
-
-
-
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
     /***********search and filter**********/
-    .search-form{
+    .search-form {
         border-radius: 0; /*suppression de l'arrondi visible sur iOS*/
     }
 
@@ -469,12 +469,12 @@ li {
         justify-content: space-between;
     }
 
-    .populaires-cards-wrapper .card{
-        margin-top:20px;
+    .populaires-cards-wrapper .card {
+        margin-top: 20px;
     }
 
     .populaires-cards-wrapper a {
-        width: 31.8%;;
+        width: 31.8%;
     }
 
     /*************activités********************/
@@ -492,7 +492,7 @@ li {
     }
 
     /********footer********/
-    footer{
+    footer {
         justify-content: space-between;
     }
 
@@ -512,9 +512,6 @@ li {
 
 
 
-
-
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     .main-container {
@@ -522,7 +519,7 @@ li {
         min-width: 320px;
     }
 
-/*************header***************/
+    /*************header***************/
     .header-container {
         flex-direction: column;
         align-items: center;
@@ -549,7 +546,7 @@ li {
     }
 
     .grey-line {
-        display:flex;
+        display: flex;
         border: 1px solid var(--filter-bg-color);
         position: absolute; /* pour afficher indépendamment du parent nav-bar */
         top: 33.4px;
@@ -576,10 +573,10 @@ li {
         justify-content: center;
     }
 
-    .localize{
-        margin-left: 11px; /*pour rattraper les -11px du magnif-glass-wrapper, sinon ce n'est plus centré*/ 
+    .localize {
+        margin-left: 11px; /*pour rattraper les -11px du magnif-glass-wrapper, sinon ce n'est plus centré*/
     }
-    
+
     .search-form {
         width: 64vw; /* vw s'adapte mieux au responsive ici*/
     }
@@ -591,12 +588,13 @@ li {
         width: 49px;
         background-color: var(--main-color);
         border-radius: 15px;
-        box-shadow: 0 5px 3px #00000047; 
-        position: relative; 
-        left: -11px;  /*pour empêcher un vide entre le form et le bouton*/
+        box-shadow: 0 5px 3px #00000047;
+        position: relative;
+        left: -11px; /*pour empêcher un vide entre le form et le bouton*/
     }
-        
-    .magnif-glass-wrapper:hover{ /*pour signaler bouton cliquable*/
+
+    .magnif-glass-wrapper:hover {
+        /*pour signaler bouton cliquable*/
         background-color: var(--hover-btn-color);
     }
 
@@ -605,7 +603,7 @@ li {
     }
 
     /************filter*************/
-    .filter{
+    .filter {
         margin: 25px auto;
     }
 
@@ -701,8 +699,8 @@ li {
         height: fit-content;
     }
 
-    .activites-cards-wrapper a{
-        width:100%;
+    .activites-cards-wrapper a {
+        width: 100%;
     }
 
     .activites-cards-wrapper .card {
