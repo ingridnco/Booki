@@ -613,7 +613,7 @@ li {
     .filter-buttons-wrapper {
         flex-wrap: wrap;
         justify-content: space-around;
-        gap: 0 5px; /*augmentation du petit espace entre les boutons-filtres seulement*/
+        gap:0;
     }
 
     .filter-button {
